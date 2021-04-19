@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots';
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/background.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 20%;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba( 31, 38, 135, 0.75);
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.formwrapper{
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+input[type = text]{
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}  
+input[type = submit]{
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 225px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} 
+.headline{
+    position: absolute;
+    bottom: 20%;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba( 31, 38, 135, 0.75);
+    font-size: 40px;
+}
